@@ -1,8 +1,16 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+const cors = require("cors");
 
 const definitions = require("./definitions.json");
+
+// Allow cross origin requests
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 app.get("/", (req, res) => {
   res.send(
