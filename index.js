@@ -25,3 +25,5 @@ app.get("/definition/:id", (req, res) => {
 });
 
 app.listen(port, () => console.log("Serveur à l'écoute"));
+
+module.exports = app;
