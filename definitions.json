@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "Programmation impérative",
+        "description": "Un langage est un langage impératif dès l'instant que celui-ci possède des mécanismes qui permettent de changer de façon explicite la valeur inhérente à une variable."
+    },
+    {
+        "id": 2,
+        "title": "Programmation déclarative",
+        "description": "Les programmes déclaratifs prennent seulement en compte ce qu’un programme doit accomplir et non comment il doit le faire. Il peut être descriptif (HTML, CSS, XML) ou procédural (suite de commandes : SQL)"
+    },
+    {
+        "id": 3,
+        "title": "Programmation orientée objet",
+        "description": "Modèle de langage de programmation qui s'articule autour d'objets et de données, plutôt que d'actions et de logique"
+    }
+    
+]
