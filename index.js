@@ -5,7 +5,9 @@ const port = 3000;
 const definitions = require("./definitions.json");
 
 app.get("/", (req, res) => {
-  res.send("Définitions : /alldefinitions");
+  res.send(
+    'Toutes les définitions : <a href="./alldefinitions">/alldefinitions</a> <br> Une définition au hasard : <a href="./definition">/definition</a> <br> Une définition avec son ID : /definition/:id'
+  );
 });
 
 app.get("/alldefinitions", (req, res) => {
