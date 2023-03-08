@@ -33,8 +33,8 @@ app.get("/definition", (req, res) => {
 // route to get a definition by id
 app.get("/definition/:id", (req, res) => {
   const id = parseInt(req.params.id);
-  const definitions = definitions.find((definitions) => definitions.id === id);
-  res.status(200).json(parking);
+  const thisdef = definitions.find((thisdef) => thisdef.id === id);
+  res.status(200).json(thisdef);
 });
 
 // route to create a new definition
