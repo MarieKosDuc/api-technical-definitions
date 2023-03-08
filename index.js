@@ -38,7 +38,7 @@ app.get("/definition/:id", (req, res) => {
 });
 
 // route to create a new definition
-app.post("/definitions/", (req, res) => {
+app.post("/createdefinition/", (req, res) => {
   definitions.push(req.body);
   res.status(200).json(definitions);
 });
