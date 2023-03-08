@@ -26,23 +26,34 @@ app.get("/alldefinitions", (req, res) => {
 
 // route to get a random definition
 app.get("/definition", (req, res) => {
-  const randomId = definitions[Math.floor(Math.random() * definitions.length)];
+  // get random category
+  const randomCat = Math.floor(Math.random() * definitions.length);
+
+  // get category index and title in the JSON
+  let catIndex;
+  let category;
+
+  switch (randomCat) {
+    case 0:
+      catIndex = 0;
+      category = "Paradigmes de programmation";
+      break;
+    case 1:
+      catIndex = 1;
+      category = "Langages de programmation";
+      break;
+  }
+
+  // get random definition inside the category
+  const randomDef = Math.floor(
+    Math.random() * definitions[catIndex][category].length
+  );
+
+  const randomId = definitions[catIndex][category][randomDef];
+
   res.status(200).json(randomId);
 });
 
-// route to get a definition by id
-app.get("/definition/:id", (req, res) => {
-  const id = parseInt(req.params.id);
-  const thisdef = definitions.find((thisdef) => thisdef.id === id);
-  res.status(200).json(thisdef);
-});
-
-// route to create a new definition
-app.post("/createdefinition", (req, res) => {
-  definitions.push(req.body);
-  res.status(200).json(definitions);
-});
-
-app.listen(port, () => console.log("Serveur à l'écoute"));
+app.listen(port, () => console.log(`Serveur à l'écoute sur le port ${port}`));
 
 module.exports = app;

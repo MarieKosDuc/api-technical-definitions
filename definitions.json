@@ -1,18 +1,141 @@
 [
-    {
-        "id": 1,
-        "title": "Programmation impérative",
-        "description": "Un langage est un langage impératif dès l'instant que celui-ci possède des mécanismes qui permettent de changer de façon explicite la valeur inhérente à une variable."
+    {"Paradigmes de programmation": [
+        {
+            "title": "Programmation impérative",
+            "description": "Ce paradigme décrit les opérations d'un programme comme des séquences d'instructions exécutées par l'ordinateur pour modifier l'état du programme (ce que le programme doit garder dans sa mémoire au cours de son exécution : numéro de ligne courant, valeur des variables, etc.). La programmation impérative se concentre sur la description de comment un programme doit travailler pour résoudre un problème."
+        },
+        {
+            "title": "Programmation déclarative",
+            "description": "Un programmes déclaratif prend uniquement en compte ce qu'il doit accomplir, et non la manière de le faire. Il peut être descriptif (HTML, CSS, XML) ou procédural (suite de commandes : SQL)."
+        },
+        {
+            "title": "Programmation orientée objet",
+            "description": "Modèle de langage de programmation qui s'articule autour d'objets et de données, plutôt que d'actions et de logique. La POO vise à modéliser des objets du monde réel."
+        },
+        {
+            "title": "Programmation événementielle",
+            "description": "Ce paradigme est fondé sur les événements qui se produisent dans le programme. En d'autres termes, l'exécution du programme sera déterminée par ce qui se produit à un instant donné. Il utilise des boucles asynchrones."
+        },
+        {
+            "title": "Signature de fonction",
+            "description": "Définit les entrées et sorties des fonctions et des méthodes. ne signature peut comporter des paramètres et leurs types, une valeur et un type de retour, des exceptions susceptibles d'être déclenchées ou reçues, des informations sur la disponibilité de la méthode dans un programme orienté objet (telles que les mots-clés public, static, ou prototype)."
+        },
+        {
+            "title": "Fonction anonyme",
+            "description": "Aussi appelée 'lambda', une fonction qui n'a pas de nom. Elle ne peut donc pas être appelée et exécutée globalement, elle s'exécute à l'endroit de sa déclaration."
+        },
+        {
+            "title": "Déclaration/définition",
+            "description": "La définition détermine la valeur à stocker dans une variable, fonction ou classe ; elle ne peut intervenir qu'une seule fois. La déclaration spécifie le nom et le type de la variable/fonction/classe, et peut être réitérée dans le programme."
+        },
+        {
+            "title": "Fonction récursive",
+            "description": "Fonction qui s'appelle elle-même au cours de son exécution."
+        },
+        {
+            "title": "Pile d'appel (callstack)",
+            "description": "Structure de données de type pile qui sert à enregistrer des informations au sujet des fonctions actives dans un programme informatique."
+        },
+        {
+            "title": "Classe, instance",
+            "description": "Composée d'attributs et de méthodes, la classe est la structure d'un objet, c'est-à-dire la déclaration de l'ensemble des composants de celui-ci. L'objet est une instanciation de la classe, le produit sorti du moule."
+        },
+        {
+            "title": "Constructeur",
+            "description": "Le constructeur d’une classe est la méthode qui permet de construire les objets de cette classe en initialisant leurs propriétés."
+        },
+        {
+            "title": "This/self",
+            "description": "En JS et Java, le mot-clé this permet de désigner, dans une classe, l’objet courant de la classe elle-même. Le mot-clé self reprend les fonctionnalités du mot-clé this et est utilisé dans d’autres langages de programmation comme Python."
+        },
+        {
+            "title": "Encapsulation",
+            "description": "L'encapsulation désigne le fait de catégoriser chaque objet dans une classe d’objet spécifique. Elle permet de définir des niveaux de visibilité des éléments de la classe. Ces niveaux de visibilité définissent les droits d’accès aux données selon que l’on y accède par une méthode de la classe elle-même, d’une classe héritière, ou bien d’une classe quelconque."
+        },
+        {
+            "title": "Public",
+            "description": "La propriété ou la méthode sera accessible à l'intérieur mais aussi à l'extérieur de la classe. Il s’agit du plus bas niveau de protection des données."
+        },
+        {
+            "title": "Private",
+            "description": "La propriété ou la méthode sera accessible à l'intérieur de la classe seulement."
+        },
+        {
+            "title": "Protected",
+            "description": "La propriété ou la méthode sera accessible à l'intérieur de la classe et des classes héritées."
+        },
+        {
+            "title": "Static",
+            "description": "Les propriétés et les méthodes statiques peuvent être utilisées sans avoir besoin d'instancier la classe."
+        },
+        {
+            "title": "Héritage",
+            "description": "Le principe d’héritage, permet à un objet d’hériter des caractéristiques d’un autre objet (on dit alors objet Parent). L’objet enfant hérite alors de toutes les propriétés et méthodes d’une classe, ainsi que leur implémentation logique, qui peuvent être réécrites au besoin (override)."
+        },
+        {
+            "title": "Interface",
+            "description": "Une interface est une déclaration de méthodes et de propriétés que tout objet enfant devra obligatoirement implémenter à son tour. L’interface est donc le prototype d’un objet (elle ne contient aucune implémentation logique de code)."
+        },
+        {
+            "title": "Polymorphisme",
+            "description": "En POO, des fonctions et des méthodes de même nom peuvent avoir des comportements différents ou effectuer des opérations sur des données de types différents. On distingue 2 types de polymorphisme, la surcharge (permet de choisir entre différentes implémentations d'une même fonction ou méthode selon le nombre et le type des arguments fournis) et la redéfinition (possibilité de redéfinir une méthode dans des classes héritant d’une classe de base)."
+        }        
+        ]
     },
-    {
-        "id": 2,
-        "title": "Programmation déclarative",
-        "description": "Les programmes déclaratifs prennent seulement en compte ce qu’un programme doit accomplir et non comment il doit le faire. Il peut être descriptif (HTML, CSS, XML) ou procédural (suite de commandes : SQL)"
-    },
-    {
-        "id": 3,
-        "title": "Programmation orientée objet",
-        "description": "Modèle de langage de programmation qui s'articule autour d'objets et de données, plutôt que d'actions et de logique"
+    {"Langages de programmation": [
+        {
+            "title": "Type de variable",
+            "description": "Une variable est une entité dont la valeur peut changer. Elle peut être de type entier, réel (nombres à virgule flottante), booléen (0/1) ou chaîne de caractères."
+        },
+        {
+            "title": "Conditions (instructions conditionnelles)",
+            "description": "Une instruction conditionnelle est une fonction d'un langage de programmation qui effectue différents calculs ou actions en fonction de l'évaluation d'une condition booléenne, à savoir vraie ou fausse."
+        },
+        {
+            "title": "Boucle",
+            "description": "Structure de contrôle de programmation qui permet de répéter l'exécution d'une séquence d'instructions."
+        },
+        {
+            "title": "Table de hachage (dictionnaire)",
+            "description": "Aussi appelée 'tableau associatif', structure de données qui permet une association clé–valeur."
+        },
+        {
+            "title": "Liste (array)/tableau",
+            "description": "Structure de données ordonnée, indexable par des entiers, mutable (modifiable), qui peut contenir plusieurs fois la même valeur."
+        },
+        {
+            "title": "Tuple",
+            "description": "Collection d'éléments ordonnée, non mutable (non modifiable), qui peut contenir plusieurs fois la même valeur."
+        },
+        {
+            "title": "Ensemble",
+            "description": "Collection d’éléments non ordonnée, non indexés et non modifiable qui n’accepte pas de contenir plusieurs fois le même élément."
+        },
+        {
+            "title": "Liste chaînée",
+            "description": "Collection ordonnée et de taille arbitraire d'éléments de même type, dont la représentation en mémoire de l'ordinateur est une succession de cellules faites d'un contenu et d'un pointeur vers une autre cellule."
+        },
+        {
+            "title": "Arbre (arbre binaire)",
+            "description": "Structure de données non linéaire dans laquelle chaque noeud a au plus deux enfants. Le noeud initial est appelé 'racine'."
+        },
+        {
+            "title": "Graphe",
+            "description": "Structure de données non linéaire composée de sommets et d'arrêtes."
+        },
+        {
+            "title": "Bibliothèque/librairie",
+            "description": "Ensemble de fonctions et de classes déjà codées dans un langage spécifique, appelées par le code."
+        },
+        {
+            "title": "Framework",
+            "description": "Le framework définit un squelette au sein duquel l’application définit ses propres fonctionnalités. Le code est appelé par le framework, et non l'inverse."
+        },
+        {
+            "title": "Gestionnaire de paquets",
+            "description": "Un ou plusieurs outils automatisant le processus d'installation, désinstallation, mise à jour de logiciels installés sur un système informatique. Un paquet est une archive comprenant les fichiers informatiques, les informations et procédures nécessaires à l'installation d'un logiciel sur un système d'exploitation au sein d'un agrégat logiciel, en s'assurant de la cohérence fonctionnelle du système ainsi modifié."
+        }        
+        ]
     }
     
 ]
