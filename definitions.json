@@ -18,7 +18,7 @@
         },
         {
             "title": "Signature de fonction",
-            "description": "Définit les entrées et sorties des fonctions et des méthodes. ne signature peut comporter des paramètres et leurs types, une valeur et un type de retour, des exceptions susceptibles d'être déclenchées ou reçues, des informations sur la disponibilité de la méthode dans un programme orienté objet (telles que les mots-clés public, static, ou prototype)."
+            "description": "Définit les entrées et sorties des fonctions et des méthodes. Une signature peut comporter des paramètres et leurs types, une valeur et un type de retour, des exceptions susceptibles d'être déclenchées ou reçues, des informations sur la disponibilité de la méthode dans un programme orienté objet (telles que les mots-clés public, static, ou prototype)."
         },
         {
             "title": "Fonction anonyme",
@@ -136,6 +136,46 @@
             "description": "Un ou plusieurs outils automatisant le processus d'installation, désinstallation, mise à jour de logiciels installés sur un système informatique. Un paquet est une archive comprenant les fichiers informatiques, les informations et procédures nécessaires à l'installation d'un logiciel sur un système d'exploitation au sein d'un agrégat logiciel, en s'assurant de la cohérence fonctionnelle du système ainsi modifié."
         }        
         ]
+    },
+    {"Architecture logiciel": [
+        {
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ."
+        },
+        {
+            "title": "Ut enim ad minim veniam",
+            "description": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        } 
+        ]
+    },
+    {"Systèmes et réseau": [
+        {
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ."
+        },
+        {
+            "title": "Ut enim ad minim veniam",
+            "description": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }         ]
+    },
+    {"Culture du test": [
+        {
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ."
+        },
+        {
+            "title": "Ut enim ad minim veniam",
+            "description": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }         ]
+    },
+    {"Structures d'exécution": [
+        {
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ."
+        },
+        {
+            "title": "Ut enim ad minim veniam",
+            "description": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }         ]
     }
-    
 ]
