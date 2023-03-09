@@ -18,19 +18,19 @@ app.get("/", (req, res) => {
     '<h1>Bienvenue dans cette API de définitions techniques, basée sur les fiches "arbre" d\'<a href="https://adatechschool.fr/">Ada Tech School</a> !</h1>' +
       "Voici les routes pour retrouver : <ul>" +
       '<li>Toutes les définitions : <a href="./definitions">/definitions</a> </li>' +
-      '<li>Une définition au hasard : <a href="./definitions/random">/definitions/random</a> </li>' +
-      '<li>Toutes les définitions de la catégorie "Paradigmes de programmation" : <a href="./definitions/paradigmes">/definitions/paradigmes</a> </li>' +
-      '<li>Une définition de la catégorie "Paradigmes de programmation" : <a href="./definitions/paradigmes/random">/definitions/paradigmes/random</a> </li>' +
-      '<li>Toutes les définitions de la catégorie "Langages de programmation" : <a href="./definitions/langages">/definitions/langages</a> </li>' +
-      '<li>Une définition de la catégorie "Langages de programmation" : <a href="./definitions/langages/random">/definitions/langages/random</a> </li>' +
-      '<li>Toutes les définitions de la catégorie "Architecture logiciel" : <a href="./definitions/architecture">/definitions/architecture</a> </li>' +
-      '<li>Une définition de la catégorie "Architecture logiciel" : <a href="./definitions/architecture/random">/definitions/architecture/random</a> </li>' +
-      '<li>Toutes les définitions de la catégorie "Systèmes et réseau" : <a href="./definitions/systeme-reseau">/definitions/systeme-reseau</a> </li>' +
-      '<li>Une définition de la catégorie "Systèmes et réseau" : <a href="./definitions/systeme-reseau/random">/definitions/systeme-reseau/random</a> </li>' +
-      '<li>Toutes les définitions de la catégorie "Culture du test et bonnes pratiques" : <a href="./definitions/culture-test">/definitions/culture-test</a> </li>' +
-      '<li>Une définition de la catégorie "Culture du test et bonnes pratiques" : <a href="./definitions/culture-test/random">/definitions/culture-test/random</a> </li>' +
-      '<li>Toutes les définitions de la catégorie "Structures d\'exécution" : <a href="./definitions/structures-exec">/definitions/structures-exec</a> </li>' +
-      '<li>Une définition de la catégorie "Structures d\'exécution" : <a href="./definitions/structures-exec/random">/definitions/structures-exec/random</a> </li>'
+      '<li>Une définition au hasard : <a href="./random">/random</a> </li>' +
+      '<li>Toutes les définitions de la catégorie "Paradigmes de programmation" : <a href="./paradigmes">/paradigmes</a> </li>' +
+      '<li>Une définition de la catégorie "Paradigmes de programmation" : <a href="./paradigmes/random">/paradigmes/random</a> </li>' +
+      '<li>Toutes les définitions de la catégorie "Langages de programmation" : <a href="./langages">/langages</a> </li>' +
+      '<li>Une définition de la catégorie "Langages de programmation" : <a href="./langages/random">/langages/random</a> </li>' +
+      '<li>Toutes les définitions de la catégorie "Architecture logiciel" : <a href="./architecture">/architecture</a> </li>' +
+      '<li>Une définition de la catégorie "Architecture logiciel" : <a href="./architecture/random">/architecture/random</a> </li>' +
+      '<li>Toutes les définitions de la catégorie "Systèmes et réseau" : <a href="./systeme-reseau">/systeme-reseau</a> </li>' +
+      '<li>Une définition de la catégorie "Systèmes et réseau" : <a href="./systeme-reseau/random">/systeme-reseau/random</a> </li>' +
+      '<li>Toutes les définitions de la catégorie "Culture du test et bonnes pratiques" : <a href="./culture-test">/culture-test</a> </li>' +
+      '<li>Une définition de la catégorie "Culture du test et bonnes pratiques" : <a href="./culture-test/random">/culture-test/random</a> </li>' +
+      '<li>Toutes les définitions de la catégorie "Structures d\'exécution" : <a href="./structures-exec">/structures-exec</a> </li>' +
+      '<li>Une définition de la catégorie "Structures d\'exécution" : <a href="./structures-exec/random">/structures-exec/random</a> </li>'
   );
 });
 
@@ -42,7 +42,7 @@ app.get("/definitions", (req, res) => {
 });
 
 // route to get a random definition
-app.get("/definitions/random", (req, res) => {
+app.get("/random", (req, res) => {
   // get random category
   const randomCat = Math.floor(Math.random() * definitions.length);
 
@@ -90,12 +90,12 @@ app.get("/definitions/random", (req, res) => {
 // --------------- ROUTE BY CATEGORY --------------------
 
 // route to get all definitions from "Paradigmes de programmation"
-app.get("/definitions/paradigmes", (req, res) => {
+app.get("/paradigmes", (req, res) => {
   res.status(200).json(definitions[0]["Paradigmes de programmation"]);
 });
 
 // route to get a random "Paradigmes" definition
-app.get("/definitions/paradigmes/random", (req, res) => {
+app.get("/paradigmes/random", (req, res) => {
   const randomDef = Math.floor(
     Math.random() * definitions[0]["Paradigmes de programmation"].length
   );
@@ -106,12 +106,12 @@ app.get("/definitions/paradigmes/random", (req, res) => {
 });
 
 // route to get all definitions from "Langages de programmation"
-app.get("/definitions/langages", (req, res) => {
+app.get("/langages", (req, res) => {
   res.status(200).json(definitions[1]["Langages de programmation"]);
 });
 
 // route to get a random "Paradigmes" definition
-app.get("/definitions/langages/random", (req, res) => {
+app.get("/langages/random", (req, res) => {
   const randomDef = Math.floor(
     Math.random() * definitions[1]["Langages de programmation"].length
   );
@@ -122,12 +122,12 @@ app.get("/definitions/langages/random", (req, res) => {
 });
 
 // route to get all definitions from "Architecture logiciel"
-app.get("/definitions/architecture", (req, res) => {
+app.get("/architecture", (req, res) => {
   res.status(200).json(definitions[2]["Architecture logiciel"]);
 });
 
 // route to get a random "Architecture" definition
-app.get("/definitions/architecture/random", (req, res) => {
+app.get("/architecture/random", (req, res) => {
   const randomDef = Math.floor(
     Math.random() * definitions[2]["Architecture logiciel"].length
   );
@@ -138,12 +138,12 @@ app.get("/definitions/architecture/random", (req, res) => {
 });
 
 // route to get all definitions from "Systèmes et réseau"
-app.get("/definitions/systeme-reseau", (req, res) => {
+app.get("/systeme-reseau", (req, res) => {
   res.status(200).json(definitions[3]["Systèmes et réseau"]);
 });
 
 // route to get a random "Systèmes et réseau" definition
-app.get("/definitions/systeme-reseau/random", (req, res) => {
+app.get("/systeme-reseau/random", (req, res) => {
   const randomDef = Math.floor(
     Math.random() * definitions[3]["Systèmes et réseau"].length
   );
@@ -154,12 +154,12 @@ app.get("/definitions/systeme-reseau/random", (req, res) => {
 });
 
 // route to get all definitions from "Culture du test"
-app.get("/definitions/culture-test", (req, res) => {
+app.get("/culture-test", (req, res) => {
   res.status(200).json(definitions[4]["Culture du test"]);
 });
 
 // route to get a random "Culture du test" definition
-app.get("/definitions/culture-test/random", (req, res) => {
+app.get("/culture-test/random", (req, res) => {
   const randomDef = Math.floor(
     Math.random() * definitions[4]["Culture du test"].length
   );
@@ -170,14 +170,14 @@ app.get("/definitions/culture-test/random", (req, res) => {
 });
 
 // route to get all definitions from "Structures d'exécution"
-app.get("/definitions/structures-exec", (req, res) => {
+app.get("/structures-exec", (req, res) => {
   res.status(200).json(definitions[5]["Structures d'exécution"]);
 });
 
 app.listen(port, () => console.log(`Serveur à l'écoute sur le port ${port}`));
 
 // route to get a random "Structures d'exécution" definition
-app.get("/definitions/structures-exec/random", (req, res) => {
+app.get("/structures-exec/random", (req, res) => {
   const randomDef = Math.floor(
     Math.random() * definitions[5]["Structures d'exécution"].length
   );
