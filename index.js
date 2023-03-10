@@ -112,7 +112,7 @@ app.get("/paradigmes/:id", (req, res) => {
   const searchedId = req.params.id;
   const searchedDefinition =
     definitions[0]["Paradigmes de programmation"][searchedId];
-  res.status(200).json(searchedId);
+  res.status(200).json(searchedDefinition);
 });
 
 // ------------- Langages --------------------
@@ -137,8 +137,8 @@ app.get("/langages/random", (req, res) => {
 app.get("/langages/:id", (req, res) => {
   const searchedId = req.params.id;
   const searchedDefinition =
-    definitions[0]["Langages de programmation"][searchedId];
-  res.status(200).json(searchedId);
+    definitions[1]["Langages de programmation"][searchedId];
+  res.status(200).json(searchedDefinition);
 });
 
 //  --------------- Architecture logiciel -------------
@@ -163,7 +163,7 @@ app.get("/architecture/random", (req, res) => {
 app.get("/architecture/:id", (req, res) => {
   const searchedId = req.params.id;
   const searchedDefinition =
-    definitions[0]["Architecture logiciel"][searchedId];
+    definitions[2]["Architecture logiciel"][searchedId];
   res.status(200).json(searchedDefinition);
 });
 
@@ -188,7 +188,7 @@ app.get("/systeme-reseau/random", (req, res) => {
 // route to get a precise "Systèmes et réseau" definition
 app.get("/systemes-reseau/:id", (req, res) => {
   const searchedId = req.params.id;
-  const searchedDefinition = definitions[0]["Systèmes et réseau"][searchedId];
+  const searchedDefinition = definitions[3]["Systèmes et réseau"][searchedId];
   res.status(200).json(searchedDefinition);
 });
 
@@ -213,7 +213,7 @@ app.get("/culture-test/random", (req, res) => {
 // route to get a precise "Culture du test" definition
 app.get("/culture-test/:id", (req, res) => {
   const searchedId = req.params.id;
-  const searchedDefinition = definitions[0]["Culture du test"][searchedId];
+  const searchedDefinition = definitions[4]["Culture du test"][searchedId];
   res.status(200).json(searchedDefinition);
 });
 
@@ -239,7 +239,7 @@ app.get("/structures-exec/random", (req, res) => {
 app.get("/structures-exec/:id", (req, res) => {
   const searchedId = req.params.id;
   const searchedDefinition =
-    definitions[0]["Structures d'exécution"][searchedId];
+    definitions[5]["Structures d'exécution"][searchedId];
   res.status(200).json(searchedDefinition);
 });
 
