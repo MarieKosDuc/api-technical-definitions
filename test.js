@@ -1,31 +1,17 @@
-const definitions = require("./definitions.json");
+fetch('http://localhost:3000/paradigmes')
+.then(function (res) {
+  if (res.ok) {
+    return res.json();
+  }
+})
+.then(function (value){
+  console.log(value[0]);
+})
 
-const randomCat = Math.floor(Math.random() * definitions.length);
-console.log(randomCat);
-// console.log(definitions[1]["Langages de programmation"].length);
-// console.log(definitions[0]["Paradigmes de programmation"]);
-// console.log(definitions[1]["Langages de programmation"][0]);
 
-let catIndex;
-let category;
+// const parkings = require('./parkings.json')
 
-switch (randomCat) {
-  case 0:
-    catIndex = 0;
-    category = "Paradigmes de programmation";
-    break;
-  case 1:
-    catIndex = 1;
-    category = "Langages de programmation";
-    break;
-}
-
-// console.log(category);
-
-// console.log(definitions[catIndex][category]);
-
-const randomDef = Math.floor(
-  Math.random() * definitions[catIndex][category].length
-);
-
-console.log(definitions[catIndex][category][randomDef]);
+// app.get('/parkings/:id', (req,res) => {    
+//   const id = parseInt(req.params.id)    
+//   const parking = parkings.find(parking => parking.id === id)   
+//   res.status(200).json(parking)})

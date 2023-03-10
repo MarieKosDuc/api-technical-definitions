@@ -46,7 +46,7 @@ app.get("/random", (req, res) => {
   // get random category
   const randomCat = Math.floor(Math.random() * definitions.length);
 
-  // get category index and title in the JSON
+  // get this category's index and title in the JSON
   let catIndex;
   let category;
 
@@ -87,7 +87,9 @@ app.get("/random", (req, res) => {
   res.status(200).json(randomId);
 });
 
-// --------------- ROUTE BY CATEGORY --------------------
+// --------------- ROUTES BY CATEGORY --------------------
+
+// ------------- Paradigmes --------------
 
 // route to get all definitions from "Paradigmes de programmation"
 app.get("/paradigmes", (req, res) => {
@@ -105,12 +107,22 @@ app.get("/paradigmes/random", (req, res) => {
   res.status(200).json(randomId);
 });
 
+// route to get a precise "Paradigmes" definition
+app.get("/paradigmes/:id", (req, res) => {
+  const searchedId = req.params.id;
+  const searchedDefinition =
+    definitions[0]["Paradigmes de programmation"][searchedId];
+  res.status(200).json(searchedId);
+});
+
+// ------------- Langages --------------------
+
 // route to get all definitions from "Langages de programmation"
 app.get("/langages", (req, res) => {
   res.status(200).json(definitions[1]["Langages de programmation"]);
 });
 
-// route to get a random "Paradigmes" definition
+// route to get a random "Langages" definition
 app.get("/langages/random", (req, res) => {
   const randomDef = Math.floor(
     Math.random() * definitions[1]["Langages de programmation"].length
@@ -120,6 +132,16 @@ app.get("/langages/random", (req, res) => {
 
   res.status(200).json(randomId);
 });
+
+// route to get a precise "Langages" definition
+app.get("/langages/:id", (req, res) => {
+  const searchedId = req.params.id;
+  const searchedDefinition =
+    definitions[0]["Langages de programmation"][searchedId];
+  res.status(200).json(searchedId);
+});
+
+//  --------------- Architecture logiciel -------------
 
 // route to get all definitions from "Architecture logiciel"
 app.get("/architecture", (req, res) => {
@@ -137,6 +159,16 @@ app.get("/architecture/random", (req, res) => {
   res.status(200).json(randomId);
 });
 
+// route to get a precise "Architecture" definition
+app.get("/architecture/:id", (req, res) => {
+  const searchedId = req.params.id;
+  const searchedDefinition =
+    definitions[0]["Architecture logiciel"][searchedId];
+  res.status(200).json(searchedDefinition);
+});
+
+//  ------------------ Systèmes et réseau -------------
+
 // route to get all definitions from "Systèmes et réseau"
 app.get("/systeme-reseau", (req, res) => {
   res.status(200).json(definitions[3]["Systèmes et réseau"]);
@@ -152,6 +184,15 @@ app.get("/systeme-reseau/random", (req, res) => {
 
   res.status(200).json(randomId);
 });
+
+// route to get a precise "Systèmes et réseau" definition
+app.get("/systemes-reseau/:id", (req, res) => {
+  const searchedId = req.params.id;
+  const searchedDefinition = definitions[0]["Systèmes et réseau"][searchedId];
+  res.status(200).json(searchedDefinition);
+});
+
+// ------------ Culture du test --------------------
 
 // route to get all definitions from "Culture du test"
 app.get("/culture-test", (req, res) => {
@@ -169,12 +210,19 @@ app.get("/culture-test/random", (req, res) => {
   res.status(200).json(randomId);
 });
 
+// route to get a precise "Culture du test" definition
+app.get("/culture-test/:id", (req, res) => {
+  const searchedId = req.params.id;
+  const searchedDefinition = definitions[0]["Culture du test"][searchedId];
+  res.status(200).json(searchedDefinition);
+});
+
+// ---------------- Structures d'exécution ------------------
+
 // route to get all definitions from "Structures d'exécution"
 app.get("/structures-exec", (req, res) => {
   res.status(200).json(definitions[5]["Structures d'exécution"]);
 });
-
-app.listen(port, () => console.log(`Serveur à l'écoute sur le port ${port}`));
 
 // route to get a random "Structures d'exécution" definition
 app.get("/structures-exec/random", (req, res) => {
@@ -186,5 +234,15 @@ app.get("/structures-exec/random", (req, res) => {
 
   res.status(200).json(randomId);
 });
+
+// route to get a precise "Structures d'exécution" definition
+app.get("/structures-exec/:id", (req, res) => {
+  const searchedId = req.params.id;
+  const searchedDefinition =
+    definitions[0]["Structures d'exécution"][searchedId];
+  res.status(200).json(searchedDefinition);
+});
+
+app.listen(port, () => console.log(`Serveur à l'écoute sur le port ${port}`));
 
 module.exports = app;
