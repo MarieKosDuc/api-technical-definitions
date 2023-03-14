@@ -1,17 +1,42 @@
-fetch('http://localhost:3000/paradigmes')
-.then(function (res) {
-  if (res.ok) {
-    return res.json();
+const definitions = require("./definitions.json");
+
+class Category {
+  constructor(catName, catIndex) {
+    this.catName = catName;
+    this.catIndex = catIndex;
   }
-})
-.then(function (value){
-  console.log(value[0]);
-})
 
+  log() {
+    return "h";
+  }
 
-// const parkings = require('./parkings.json')
+  getGeneralRoute(catName, catIndex) {
+    console.log(`/${catName}`);
+  }
 
-// app.get('/parkings/:id', (req,res) => {    
-//   const id = parseInt(req.params.id)    
-//   const parking = parkings.find(parking => parking.id === id)   
-//   res.status(200).json(parking)})
+  getRandomRoute(catName, catIndex) {
+    crossOriginIsolated.log(`/${catName}/random`);
+    const randomDef = Math.floor(Math.random() * catIndex.length);
+    const randomId = catIndex[randomDef];
+    console.log(randomId);
+  }
+
+  getRouteById(catName, catIndex) {
+    console.log(`/${catName}/:id`);
+    const searchedId = req.params.id;
+    const searchedDefinition = catIndex[searchedId];
+    console.log(searchedDefinition);
+  }
+}
+
+const paradigmes = new Category(
+  "paradigmes",
+  definitions[0]["Paradigmes de programmation"]
+);
+
+// console.log(paradigmes);
+console.log(paradigmes.log);
+
+// paradigmes.getGeneralRoute;
+// paradigmes.getRandomRoute;
+// paradigmes.getRouteById;

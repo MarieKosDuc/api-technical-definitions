@@ -97,29 +97,69 @@ app.get("/random", (req, res) => {
 
 // ------------- Paradigmes --------------
 
+class Category {
+  constructor(catName, catIndex) {
+    this.catName = catName;
+    this.catIndex = catIndex;
+  }
+
+  getGeneralRoute(catName, catIndex) {
+    app.get(`/${catName}`, (req, res) => {
+      res.status(200).json(catName);
+    });
+  }
+
+  getRandomRoute(catName, catIndex) {
+    app.get(`/${catName}/random`, (req, res) => {
+      const randomDef = Math.floor(Math.random() * catIndex.length);
+
+      const randomId = catIndex[randomDef];
+
+      res.status(200).json(randomId);
+    });
+  }
+
+  getRouteById(catName, catIndex) {
+    app.get(`/${catName}/:id`, (req, res) => {
+      const searchedId = req.params.id;
+      const searchedDefinition = catIndex[searchedId];
+      res.status(200).json(searchedDefinition);
+    });
+  }
+}
+
+const paradigmes = new Category(
+  "paradigmes",
+  definitions[0]["Paradigmes de programmation"]
+);
+
+paradigmes.getGeneralRoute;
+paradigmes.getRandomRoute;
+paradigmes.getRouteById;
+
 // route to get all definitions from "Paradigmes de programmation"
-app.get("/paradigmes", (req, res) => {
-  res.status(200).json(definitions[0]["Paradigmes de programmation"]);
-});
+// app.get("/paradigmes", (req, res) => {
+//   res.status(200).json(definitions[0]["Paradigmes de programmation"]);
+// });
 
-// route to get a random "Paradigmes" definition
-app.get("/paradigmes/random", (req, res) => {
-  const randomDef = Math.floor(
-    Math.random() * definitions[0]["Paradigmes de programmation"].length
-  );
+// // route to get a random "Paradigmes" definition
+// app.get("/paradigmes/random", (req, res) => {
+//   const randomDef = Math.floor(
+//     Math.random() * definitions[0]["Paradigmes de programmation"].length
+//   );
 
-  const randomId = definitions[0]["Paradigmes de programmation"][randomDef];
+//   const randomId = definitions[0]["Paradigmes de programmation"][randomDef];
 
-  res.status(200).json(randomId);
-});
+//   res.status(200).json(randomId);
+// });
 
-// route to get a precise "Paradigmes" definition
-app.get("/paradigmes/:id", (req, res) => {
-  const searchedId = req.params.id;
-  const searchedDefinition =
-    definitions[0]["Paradigmes de programmation"][searchedId];
-  res.status(200).json(searchedDefinition);
-});
+// // route to get a precise "Paradigmes" definition
+// app.get("/paradigmes/:id", (req, res) => {
+//   const searchedId = req.params.id;
+//   const searchedDefinition =
+//     definitions[0]["Paradigmes de programmation"][searchedId];
+//   res.status(200).json(searchedDefinition);
+// });
 
 // ------------- Langages --------------------
 

@@ -139,24 +139,121 @@
     },
     {"Architecture logiciel": [
         {
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ."
+            "title": "Internet / world wide web",
+            "description": "L’Internet est un réseau mondial d’ordinateurs capables de communiquer entre eux. Le World Wide Web est un réseau de pages hypertextes reliées par des liens, disponibles via Internet."
         },
         {
-            "title": "Ut enim ad minim veniam",
-            "description": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        } 
+            "title": "DOM",
+            "description": "Le DOM (Document Object Model) est une API qui représente et interagit avec tous types de documents HTML ou XML. Le DOM est un modèle de document chargé dans le navigateur. Sa représentation est un arbre nodal, chaque nœud représentant une partie du document."
+        }, 
+        {
+            "title": "Client/serveur",
+            "description": "Le protocole ou environnement client–serveur désigne un mode de transaction (souvent à travers un réseau) entre plusieurs programmes ou processus : l'un, qualifié de client, envoie des requêtes ; l'autre, qualifié de serveur, attend les requêtes des clients et y répond."
+        },
+        {
+            "title": "API",
+            "description": "Une API (application programming interface ou « interface de programmation d'application ») est une interface logicielle qui permet de « connecter » un logiciel ou un service à un autre logiciel ou service afin d'échanger des données et des fonctionnalités."
+        },
+        {
+            "title": "Base de données relationnelle",
+            "description": "La conception de ces bases de données repose sur le relationnel, similaire au modèle Entité Association qu’on retrouve pour la programmation orientée objet. L'idée générale est de définir des 'éléments' et le relations' qui les lient. Leur langage de requête de référence est le SQL."
+        },
+        {
+            "title": "Modèle entité-association",
+            "description": "Ce modèle fournit une description graphique pour représenter des modèles de données sous la forme de diagrammes contenant des entités et des associations. Il distingue des objets de gestion (une commande, une livraison, une facture, un produit...) et des associations entre les objets (\"contient\" entre l'objet \"commande\" et l'objet \"produit\"."
+        }, 
+        {
+            "title": "Relations",
+            "description": "Les relations de base de données sont des associations entre des tables qui sont créées à l'aide d'instruction de jointure pour récupérer des données. Les deux tables ne peuvent avoir qu'un seul enregistrement de chaque côté de la relation."
+        }, 
+        {
+            "title": "Clé primaire",
+            "description": "Dans une base de données relationnelle, une clé primaire est la donnée qui permet d'identifier de manière unique un enregistrement dans une table. Elle peut être composée d'une ou de plusieurs colonnes de la table. Deux lignes distinctes de la table ne peuvent pas avoir les mêmes valeurs dans les colonnes définies comme clé primaire."
+        }, 
+        {
+            "title": "Clé étrangère",
+            "description": "Une clé étrangère identifie une colonne ou un ensemble de colonnes d'une table comme référençant une colonne ou un ensemble de colonnes d'une autre table (la table référencée). Les colonnes de la table référencée doivent faire partie d'une contrainte de clé primaire ou d'une contrainte d'unicité. La contrainte de clé étrangère garantit que les valeurs de chaque ligne de la table référençant existent dans la table référencée."
+        }, 
+        {
+            "title": "Cardinalité",
+            "description": "La cardinalité d'une association permet de représenter le nombre minimum et maximum d'instances qui sont autorisées à participer à la relation. La cardinalité est définie pour les deux sens de la relation."
+        }, 
+        {
+            "title": "Jointure",
+            "description": "la jointure ou appariement est l'opération permettant d'associer plusieurs tables ou vues de la base par le biais d'un lien logique de données entre les différentes tables ou vues."
+        },
+        {
+            "title": "Normalisation",
+            "description": "La normalisation correspond au processus d’organisation des données dans une base de données. Ce processus comprend la création de tables et l’établissement de relations entre celles-ci conformément à des règles conçues à la fois pour protéger les données et pour rendre la base de données plus flexible grâce à l’élimination de la redondance et des dépendances incohérentes."
+        },
+        {
+            "title": "CRUD",
+            "description": "Create - Read - Update - Delete. Les quatre opérations réalisables sur une base de données."
+        }
         ]
     },
     {"Systèmes et réseau": [
         {
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ."
+            "title": "Système d'exploitation",
+            "description": "Ensemble de programmes qui permettent le fonctionnement et l’utilisation des principales ressources de l’ordinateur (mémoire, disque dur, processeur). Il sert de pont entre ces composants et les logiciels ou applications qui vont permettre à l’utilisateur de profiter des fonctionnalités de son appareil. Il est composé d’un noyau (kernel) où sont regroupés tous les programmes basiques du système, d’une interface (shell) qui joue le rôle d’intermédiaire entre l’utilisateur et le système d’exploitation et d’un système de fichiers (File System ou FS) pour la gestion des données."
         },
         {
-            "title": "Ut enim ad minim veniam",
-            "description": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        }         ]
+            "title": "CPU",
+            "description": "Unité de traitement ou microprocesseur principal d'un ordinateur. Il traite et organise les données des autres composants de la machine comme la mémoire et le disque dur, puis réalise des calculs divers pour faciliter l'interaction entre l'utilisateur et la machine."
+        }, 
+        {
+            "title": "TCP/IP",
+            "description": "Transmission Control Protocol/Internet Protocol (Protocol de contrôle des transmissions/Protocole Internet). TCP/IP est un ensemble de règles normalisées permettant aux ordinateurs de communiquer sur un réseau tel qu'Internet. Son modèle est divisé en quatre couches distinctes (liaison de données, internet, transport, application). Utilisées ensemble, elles peuvent également être appelées une suite de protocoles."
+        },
+        {
+            "title": "Couche de liaison de données",
+            "description": "La couche de liaison de données, également appelée couche d'interface réseau ou couche physique, gère les parties physiques de l'envoi et de la réception de données à l'aide du câble Ethernet, du réseau sans fil, de la carte d'interface réseau, du pilote de périphérique de l'ordinateur, etc."
+        },
+        {
+            "title": "Couche internet",
+            "description": "La couche Internet, également appelée couche réseau, contrôle le mouvement des paquets sur le réseau."
+        },
+        {
+            "title": "Couche transport",
+            "description": "La couche transport fournit une connexion des données fiable entre deux appareils. Elle divise les données en paquets, accuse réception des paquets qu'elle a reçus de l'autre appareil et s'assure que ce dernier accuse réception des paquets qu'il reçoit."
+        },
+        {
+            "title": "Couche application",
+            "description": "La couche application est le groupe d'applications nécessitant une communication réseau. Il s'agit généralement de l'application avec laquelle l'utilisateur interagit, comme les e-mails et la messagerie. Parce que les couches inférieures gèrent les détails de la communication, les applications n'ont pas besoin de s'en préoccuper."
+        },
+        {
+            "title": "HTTP",
+            "description": "Hypertext Transfer Protocol : protocole de communication client-serveur développé pour le World Wide Web. Il définit la communication entre un client et un serveur, et fonctionne selon le principe de 'requête/réponse'"
+        },   
+        {
+            "title": "Adresse MAC",
+            "description": "Adresse physique unique d'un appareil"
+        }, 
+        {
+            "title": "Adresse IP",
+            "description": "Numéro d'identification de chaque appareil connecté à un réseau utilisant le protocole Internet."
+        },
+        {
+            "title": "Broadcast",
+            "description": "Transmission simultanée vers tous les équipements d'un réseau."
+        },
+        {
+            "title": "DHCP",
+            "description": "Le protocole DHCP (Dynamic Host Configuration Protocol) est un protocole client/serveur qui fournit automatiquement à un hôte IP (Internet Protocol) son adresse IP et d’autres informations de configuration associées, telles que le masque de sous-réseau et la passerelle par défaut."
+        },
+        {
+            "title": "Répéteur (hub)",
+            "description": "Dispositif d'interconnexion de réseau physique. Sa fonction est de générer des signaux (c'est-à-dire, amplification et remodelage du signal d'origine)."
+        },
+        {
+            "title": "Commutateur (switch)",
+            "description": "Le switch fonctionne sur la deuxième couche OSI (la couche de liaison de données). Il régénère l'information et l'envoie au port désigné après le traitement interne, via l'adresse MAC."
+        },
+        {
+            "title": "Routeur",
+            "description": "Le routage fait référence au transfert d'informations des emplacements sources vers les emplacements cibles via des réseaux interconnectés."
+        }
+     ]
     },
     {"Culture du test": [
         {

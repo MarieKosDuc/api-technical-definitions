@@ -1,0 +1,4 @@
+A faire :
+
+- ajouter la section des BDD non relationnelles à architecture logiciel
+- reprendre branche réseau 1 : protocoles web, après hub/switch/router
