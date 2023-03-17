@@ -1,7 +1,8 @@
 A faire :
 
 - ajouter la section des BDD non relationnelles à architecture logiciel
-- reprendre branche réseau 1 : protocoles web, après hub/switch/router
+- culture du test : intégrer le TDD
+- structures d'exécution : reprendre la branche "Exécution" (threads, event loop, asynchrone)
 
 
 - revoir structure JSon : renommer les catégories en reprenant le nom de chaque route, supprimer le tableau à l'intérieur pour faire un objet d'objet 

@@ -253,27 +253,145 @@
         {
             "title": "Routeur",
             "description": "Le routage fait référence au transfert d'informations des emplacements sources vers les emplacements cibles via des réseaux interconnectés."
+        },
+        {
+            "title": "TCP/UDP",
+            "description": "TCP (transfert control protocol) est un protocole bilatéral qui ouvre une connexion entre le client et le serveur. Après un \"handshake\" (premier contact du serveur vers le client), le destinataire accuse réception des paquets reçus. Les paquets corrompus ou manquants sont redemandés et renvoyés par le serveur. <br /> A l'inverse, UDP (user datagram protocol) est un protocole unilatéral. Plus rapide et léger que TCP, il n'implique pas de conversation client/serveur, mais uniquement un envoi de paquets non numérotés vers le demandeur, sans accusé de réception."
+        }, 
+        {
+            "title": "DNS", 
+            "description": "Le Domain Name System (système de nom de domaine) ou DNS est un service informatique distribué qui associe les noms de domaine Internet avec leurs adresses IP."
+        }, 
+        {
+            "title": "HTTP",
+            "description": "L’Hypertext Transfer Protocol, généralement abrégé HTTP, est un protocole de communication client-serveur développé pour le World Wide Web. HTTPS (secure) en est la variante sécurisée par le chiffrement et l'authentification."
+        },
+        {
+            "title": "URL",
+            "description": " Uniform Resource Locator, littéralement « localisateur uniforme de ressource »). Couramment appelée adresse web, l'URL est une chaîne de caractères uniforme qui permet d'identifier une ressource du World Wide Web par son emplacement et de préciser le protocole internet pour la récupérer (par exemple http ou https)."
+        }, 
+        {
+            "title": "Intégrité",
+            "description": "L'un des fondements de la sécurité informatique : garantir que les données sont bien celles que l'on croit être. "
+        },
+        {
+            "title": "Disponibilité",
+            "description": "L'un des fondements de la sécurité informatique : maintenir le bon fonctionnement du système d'information. "
+        },
+        {
+            "title": "Confidentialité",
+            "description": "L'un des fondements de la sécurité informatique : rendre l'information inintelligible à d'autres personnes que les seuls acteurs d’une transaction. "
+        },
+        {
+            "title": "Non répudiation",
+            "description": "L'un des fondements de la sécurité informatique : garantir qu'une transaction ne peut être niée. "
+        },
+        {
+            "title": "Authentification",
+            "description": "L'un des fondements de la sécurité informatique : assurer que seules les personnes autorisées aient accès aux ressources. "
+        },
+        {
+            "title": "RAID",
+            "description": " Ensemble de techniques de virtualisation du stockage permettant de répartir des données sur plusieurs disques durs afin d'améliorer les performances, la sécurité ou la tolérance aux pannes. <br />RAID 0 : répartition des données sur deux disques. <br />RAID 1 : copie redondante des données d'un disque sur un deuxième.<br /> RAID 5 : répartition des données sur plusieurs disques grâce à un système de parité."
+        },
+        {
+            "title": "Hash/condensat",
+            "description": "Résultat de l'application d'une technique de hachage sur une chaîne de caractères, un message, un fichier."
+        },
+        {
+            "title": "Salt/sel",
+            "description": "Clé ajoutée avant le hachage, pour rendre le résultat plus robuste."
+        },
+        {
+            "title": "SSL/TLS",
+            "description": " Secure Sockets Layer : protocole cryptographique utilisé pour assurer la sécurité de la connexion Internet et la protection des données sensibles transmises entre deux systèmes. TLS (Transport Layer Security) est une nouvelle version, plus sûre, de SSL."
+        },
+        {
+            "title": "TGPD",
+            "description": "« Règlement Général sur la Protection des Données », encadre le traitement des données personnelles sur le territoire de l’Union européenne."
+        }, 
+        {
+            "title": "SSH",
+            "description": "Secure Shell :  protocole de communication sécurisé. Le protocole de connexion impose un échange de clés de chiffrement en début de connexion. Par la suite, tous les segments TCP sont authentifiés et chiffrés. Il remplace les différents protocoles non chiffrés tels que Telnet."
         }
      ]
     },
     {"Culture du test": [
         {
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ."
+            "title": "Développement itératif",
+            "description": "Le développement itératif consiste à effectuer de petits cycles de développement de code, dont on va s'efforcer de valider rapidement le fonctionnement. Il s'agit de découper son code en petites fonctionnalités, plutôt que de tout développer d'un coup."
         },
         {
-            "title": "Ut enim ad minim veniam",
-            "description": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        }         ]
+            "title": "Logging/journalisation",
+            "description": "Action de relever dans un journal tous les événements qui se produisent dans un système. Permet de mieux comprendre le fonctionnement de celui-ci."
+        },
+        {
+            "title": "Débugging/déboggage",
+            "description": "Action de chercher et de corriger l'origine d'une erreur dans un code informatique."
+        }, 
+        {
+            "title": "Test d'acceptance/de validation",
+            "description": "S'assurer que le code répond aux différents scénarios qui composent le besoin utilisateur. Prend généralement la forme \"given-when-then\"."
+        }, 
+        {
+            "title": "Tests automatisés",
+            "description": "Code écrit spécifiquement pour tester le code applicatif. Ces tests s'assurent qu'une fonction, un module, ou une application retourne un résultat conforme à l'attendu?"
+        }, 
+        {
+            "title": "Code coverage/couverture de code",
+            "description": "Mesure de l'étendue des tests automatisés sur une base de code (souvent exprimé en pourcentage de couverture), permettant d'identifier les parties de code qui ne bénéficient pas de tests associés et qui sont donc potentiellement plus à risque."
+        }, 
+        {
+            "title": "Pyramide des tests",
+            "description": "Modèle permettant de visualiser la volumétrie et la lourdeur des tests par type. Tests unitaires(rapides mais doivent être nombreux) > tests d'intégration > tests fonctionnels (peu nombreux mais très lourds à exécuter)."
+        }, 
+        {
+            "title": "Test unitaire",
+            "description": "Vérifie le comportement d'une fonction ou d'un composant de manière isolée, en s'assurant que le résultat est conforme à l'attendu."
+        }, 
+        {
+            "title": "Test d'intégration",
+            "description": "S'assure du bon fonctionnement de la mise en œuvre conjointe de plusieurs unités de programme."
+        },
+        {
+            "title": "Test de bout en bout/fonctionnel/end-to-end",
+            "description": "Vérifie que tous les composants d'un système sont capables de fonctionner de manière optimale dans des situations réelles. Le but est de vérifier le bon fonctionnement d'une application du début à la fin du parcours utilisateur."
+        },
+        {
+            "title": "Test de non-régression",
+            "description": "Vise à s'assurer que l'implémentation de nouvelles fonctionnalités n'a pas dégradé le fonctionnement du système."
+        },
+        {
+            "title": "Mock",
+            "description": "Données simulées utilisées pour tester le comportement isolé d'une fonctionnalité, sans la connecter au reste du système."
+        }
+    ]
     },
     {"Structures d'exécution": [
         {
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ."
+            "title": "Compilateur",
+            "description": "programme qui traite les instructions écrites dans un langage de programmation donné pour les traduire en langage machine. Première génération de programmes traducteurs de code, avec Fortran."
         },
         {
-            "title": "Ut enim ad minim veniam",
-            "description": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        }         ]
+            "title": "Interpréteur",
+            "description": "Programme qui transforme un langage de haut niveau en code machine, en opérant la traduction ligne à ligne pendant l'exécution du programme."
+        },
+        {
+            "title": "Compilation, langages compilés",
+            "description": "Processus qui transforme le code compréhensible par un humain en code machine sous forme d'un exécutable. Rapide à l'exécution, le code est obfusqué ; non cross-plateformes, nécessaire de recompiler le code à chaque modification. C, C++, Objective C..."
+        },
+        {
+            "title": "Langages interprétés",
+            "description": "Traduction du code en langage machine ligne à ligne au fil de son exécution. Cross-plateforme à condition qu'un logiciel interpréteur soit présent, pas de temps de compilation entre le code et le test ; exécution moins rapide que le code compilé, code lisible (non obfusqué). PHP, JS..." 
+        },
+        {
+            "title": "Langages intermédiaires/Bytecode",
+            "description": "Approche qui consiste à compiler le code dans un langage intermédiaire optimisé pour l'interprétation (Bytecode), qui sera ensuite interprété par la plateforme visée. Permet d’obfusquer son code, d’avoir une compilation intermédiaire plus rapide et une exécution mieux optimisée. Java, C#, Python, VBnet... "
+        }, 
+        {
+            "title": "Transpilation",
+            "description": "Action de traduire le code source d’un programme écrit avec un premier langage en un programme équivalent écrit dans un second langage ayant le même niveau d’abstraction (exemple : TS vers JS)."
+        }
+    ]
     }
 ]
