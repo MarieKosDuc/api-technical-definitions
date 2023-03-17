@@ -1,11 +1,10 @@
 const definitions = require("./definitions.json");
 const homePage = require("./apihomepage.js");
 
-
 // API "homepage"
-const getHome = ((req, res) => {
-    res.send(homePage);
-  });
+const getHome = (req, res) => {
+  res.send(homePage);
+};
 
 // ------------- ROUTES FOR ALL DEFINITIONS/RANDOM ----------------
 
@@ -221,25 +220,25 @@ const getStructuresExecId = (req, res) => {
 };
 
 module.exports = {
-    getHome,
-    getDefinitions,
-    getRandom,
-    getArchitecture,
-    getArchitectureId,
-    getArchitectureRandom,
-    getCultureTest,
-    getCultureTestId,
-    getCultureTestRandom,
-    getLangages,
-    getLangagesId,
-    getLangagesRandom,
-    getParadigmes,
-    getParadigmesId,
-    getParadigmesRandom,
-    getStructuresExec,
-    getStructuresExecId,
-    getStructuresExecRandom,
-    getSystemesReseau,
-    getSystemesReseauId,
-    getSystemesReseauRandom
-}
+  getHome,
+  getDefinitions,
+  getRandom,
+  getArchitecture,
+  getArchitectureId,
+  getArchitectureRandom,
+  getCultureTest,
+  getCultureTestId,
+  getCultureTestRandom,
+  getLangages,
+  getLangagesId,
+  getLangagesRandom,
+  getParadigmes,
+  getParadigmesId,
+  getParadigmesRandom,
+  getStructuresExec,
+  getStructuresExecId,
+  getStructuresExecRandom,
+  getSystemesReseau,
+  getSystemesReseauId,
+  getSystemesReseauRandom,
+};
