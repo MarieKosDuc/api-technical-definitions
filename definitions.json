@@ -1,5 +1,6 @@
 [
-    {"Paradigmes de programmation": [
+    {"Paradigmes de programmation": 
+    [
         {
             "title": "Programmation impérative",
             "description": "Ce paradigme décrit les opérations d'un programme comme des séquences d'instructions exécutées par l'ordinateur pour modifier l'état du programme (ce que le programme doit garder dans sa mémoire au cours de son exécution : numéro de ligne courant, valeur des variables, etc.). La programmation impérative se concentre sur la description de comment un programme doit travailler pour résoudre un problème."

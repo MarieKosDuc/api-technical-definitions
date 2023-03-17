@@ -2,3 +2,7 @@ A faire :
 
 - ajouter la section des BDD non relationnelles à architecture logiciel
 - reprendre branche réseau 1 : protocoles web, après hub/switch/router
+
+
+- revoir structure JSon : renommer les catégories en reprenant le nom de chaque route, supprimer le tableau à l'intérieur pour faire un objet d'objet 
+- faire un tableau de correspondance route avec ? comme paramètre ("/?/definitions", "/?/random", "/?/definition/:id")
